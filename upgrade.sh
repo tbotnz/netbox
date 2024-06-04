@@ -14,6 +14,7 @@ echo "You are installing (or upgrading to) NetBox version ${NETBOX_VERSION}"
 VIRTUALENV="$(pwd -P)/venv"
 PYTHON="${PYTHON:-python3}"
 
+
 # Validate the minimum required Python version
 COMMAND="${PYTHON} -c 'import sys; exit(1 if sys.version_info < (3, 10) else 0)'"
 PYTHON_VERSION=$(eval "${PYTHON} -V")
